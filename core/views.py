@@ -28,12 +28,12 @@ def form_aportes(request):
 def form_mod_zapatillas(request, id):
     zapatilla = DatosZapatilla.objects.get(nombre=id)
 
-    datos = {
-        'form': Form_aportes(instance=zapatilla)
+    datos ={
+        'form': AportesForm(instance=zapatilla)
     }
-
+    
     if request.method == 'POST': 
-        formulario = Form_aportes(data=request.POST, instance = zapatilla)
+        formulario = AportesForm(data=request.POST, instance = zapatilla)
         if formulario.is_valid: 
             formulario.save()
             return redirect('ver')
