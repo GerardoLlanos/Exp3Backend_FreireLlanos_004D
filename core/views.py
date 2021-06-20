@@ -8,6 +8,10 @@ def home(request):
 
     return render(request, 'home.html')
 
+def LanzamientoZapatillas(request):
+
+    return render(request, 'LanzamientoZapatillas.html')
+
 def Ver(request):
     verzapatillas = DatosZapatilla.objects.all()
 
