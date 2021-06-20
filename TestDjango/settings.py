@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=*u&n_iu7j&$j4ow9$+uu^@6ktx!3n9&8zyhwio7hjo1=xm7x1'
+SECRET_KEY = '#@j+xln3)i3*w%!m4g87sa_#$d_dv!fpmn6pnop=$le#&ib@j-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': '127.0.0.1:1521/xe',
-        'USER': 'c##pagina1',
+        'USER': 'c##paginafinal',
         'PASSWORD': 'prueba',
         'TEST': {
             'USER': 'default_test',
@@ -126,7 +126,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    'core/static',
-)
