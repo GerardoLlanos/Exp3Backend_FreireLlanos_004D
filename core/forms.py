@@ -3,52 +3,49 @@ from django.forms import ModelForm
 from django.forms import widgets
 from django.forms.models import ModelChoiceField
 from django.forms.widgets import Widget
-from . models import Categoria, Vehiculo
+from .models import Marca, DatosZapatilla            
 
 
-class VehiculoForm(forms.ModelForm):
+class AportesForm(forms.ModelForm):
 
     class Meta: 
-        model= Vehiculo
-        fields = ['patente', 'marca', 'modelo', 'categoria']
-        labels ={
-            'patente': 'Patente', 
-            'marca': 'Marca', 
-            'modelo': 'Modelo', 
-            'categoria': 'Categoría',
+        model = DatosZapatilla
+        fields = ['nombre', 'marca', 'valor', 'fecha']
+    
+        labels={
+            'nombre': 'Nombre de Zapatilla: ',
+            'marca': 'Marca de Zapatilla: ',
+            'valor': 'Valor de Zapatilla: ', 
+            'fecha': 'Fecha de Lanzamiento: ',
+            'imagen': 'Imagen de Zapatilla: '
+
         }
         widgets={
-            'patente': forms.TextInput(
-                attrs={
-                    'class': 'form-control', 
-                    'placeholder': 'Ingrese patente', 
-                    'id': 'patente'
-                }
-            ), 
-            'marca': forms.TextInput(
-                attrs={
-                    'class': 'form-control', 
-                    'placeholder': 'Ingrese marca', 
-                    'id': 'marca'
-                }
-            ), 
-            'modelo': forms.TextInput(
-                attrs={
-                    'class': 'form-control', 
-                    'placeholder': 'Ingrese modelo', 
-                    'id': 'modelo'
-                }
-            ), 
-            'categoria': forms.Select(
+            'nombre': forms.TextInput(
                 attrs={
                     'class': 'form-control',
-                    'id': 'categoria',
+                    'id': 'nombre', 
+                    'placeholder': 'Digite nombre'
                 }
-            )
-
+            ),
+            'marca': forms.Select(
+                attrs={
+                    'class': 'form-control',
+                    'id': 'marca', 
+                }
+            ), 
+            'valor': forms.NumberInput(
+                attrs={
+                    'class': 'form-control',
+                    'id': 'valor', 
+                    'placeholder': 'Digite valor'
+                }
+            ),
+            'fecha': forms.TextInput(
+                attrs={
+                    'class': 'form-control',
+                    'id': 'fecha',
+                    'placeholder': '01/01/2021'
+                }
+            ),
         }
-
- 
-    
-     
-

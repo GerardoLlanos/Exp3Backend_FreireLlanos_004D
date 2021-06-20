@@ -13,8 +13,8 @@ class DatosZapatilla(models.Model):
     nombre = models.CharField(primary_key=True, max_length= 100, verbose_name='Nombre de Zapatilla')
     marca = models.ForeignKey(Marca, on_delete=models.CASCADE)
     valor = models.IntegerField(verbose_name='Valor')
-    fecha = models.DateField(verbose_name='Fecha')
-    imagen = models.ImageField(upload_to='zapatillas')
+    fecha = models.CharField(max_length= 10, verbose_name='Fecha')
+
 
     def __str__(self):
         return self.nombre
