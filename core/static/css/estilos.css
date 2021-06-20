@@ -1,0 +1,1859 @@
+
+/*================= Estilos generales =================*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+                
+/*================= INICIO NAVBAR =================*/
+
+
+.navbar {
+    text-transform: uppercase;
+    box-shadow: 0 1.6px 1.6px rgb(162, 164, 167);
+}
+
+.navbar-brand img{
+    width: 60px;
+    height: 60px;
+}
+
+/* Todos los elementos que tengan la clase active dentro de la clase navbar main tendrar eso */
+.navbar-main .active{
+    text-decoration: underline wavy;
+    text-underline-offset: 9px;
+}
+
+
+
+/*================= FIN NAVBAR =================*/
+
+
+
+                    /*================= INICIO INDEX =================*/
+
+
+/*================= INICIO CARRUSEL =================*/
+
+
+/* Cambiar tamaño de botones */
+.carousel-indicators li {
+    width: 40px;
+    height: 6px;
+    margin: 5px;
+    margin-right: 4px;
+    margin-left: 4px;
+} 
+
+.carousel-caption{
+    top: 150px;
+}
+
+/*================= FIN CARRUSEL =================*/
+
+
+/*================= INICIO RIBBON =================*/
+
+#ribbon{
+    background-color: rgb(248, 248, 248);
+    background-image: repeating-linear-gradient(45deg,transparent,transparent 25px,rgb(255, 255, 255) 25px,rgb(255, 255, 255) 40px) 
+}
+
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px ;        
+}
+
+#tarjeta{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgb(187, 185, 187);
+}
+
+.textshadow{
+    text-shadow: 0 6px 6px rgb(0, 0, 0)
+}
+
+.titulo-ribbon{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.parrafo-ribbon{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*================= FIN RIBBON =================*/
+
+
+/*================= INICIO NOTICIAS =================*/
+
+.noticia{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.noticia-item{
+    width: inherit;
+    height: inherit;    
+}
+
+
+.noticia-item img{
+    width: 100%;
+    height: 97.5%;
+    object-fit: cover;
+    
+}
+.zoom-img{
+    transition: transform .2s; /* Animation */
+}
+
+.noticia-item-text{ 
+    max-width: 100%;
+    padding: 2rem;
+    top: initial;
+    bottom: 18px;
+    transform: initial;
+    max-width: 100%;
+    position: absolute;
+    background-color: rgb(0, 0, 0, .7);
+    color: #fff;
+    
+}
+
+
+.noticia-item-text h5{
+    font-size: 23px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+
+.noticia-item-text p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+.zoom-img:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 2000px){
+    .noticia-item-text p{
+        font-size: 25px;
+    }
+    .noticia-item-text h5{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+}
+
+@media screen and (max-width: 450px){
+    .noticia-item-text p{
+        font-size: 15px;
+    }
+    .noticia-item-text h5{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .noticia-item-text p{
+        font-size: 12px;
+    }
+    .noticia-item-text h5{
+        font-size: 18px;
+    }
+}
+
+
+
+/*================= FIN NOTICIAS =================*/
+
+
+/*================= INICIO TARJETAS HYPE =================*/
+
+
+#facilities{
+    background-color: #f8f8f8;
+    padding: 30px 0px;
+}
+
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+}
+
+.card {
+    margin: 20px 10px;
+}
+
+.cardborder{
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.cardborder:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 5px rgba(36, 36, 36, 0.2);
+}
+
+.card-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 2000px){
+    .card-text{
+        font-size: 20px;
+    }
+    .card-title{
+        font-size: 25px;
+    }
+}
+
+/*================= FIN TARJETAS HYPE =================*/
+
+
+/*================= INICIO SECCIÓN ZAPATILLAS =================*/
+
+.cardborder2{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: transform .3s   ;
+}
+
+.cardborder2:hover{
+    transform: translateY(-15px);
+    transition: transform .3s;
+}
+
+.text1{
+    font-size: 13px;
+    color: #cbcbcb;
+}
+
+.info{
+    line-height: 17px;
+}
+
+.star{
+    color: #fbc02d;
+}
+
+.cost span{
+    /* color: #fb3531; */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shoe{
+    background: #fbc02d;
+}
+
+.shoe:hover{
+    opacity: .8;
+}
+
+.cursor{
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+} 
+
+
+.fire{
+    color: #ff0000;
+}
+
+
+.shoefire{
+    background: #ff0000;
+}
+
+.shoefire:hover{    
+    opacity: .8;
+}
+
+
+.clock{
+    color: black;
+}
+
+.shoeprox{
+    background: gray;
+}
+
+.shoeprox:hover{
+    opacity: .8;
+} 
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+/*================= INICIO SECCIÓN ZAPATILLAS =================*/
+
+                                /*================= FIN INDEX =================*/
+
+
+
+                                /*================= INICIO LANZAMIENTOS =================*/
+
+/*================= INICIO BACKGROUND =================*/
+
+.banner-lanzamiento{
+    background: url(../img/lanzamiento.jpg)fixed center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-lanzamiento::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #3a3a3a;
+    opacity: 0.6;
+}
+
+.banner-info-lanzamiento{
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+
+.banner-title-lanzamiento{
+    line-height: 1.5;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.banner-p-lanzamiento{
+    line-height: 2;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 2000px){
+    .banner-p-lanzamiento{
+        font-size: 26px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .banner-p-lanzamiento{
+        font-size: 15px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .banner-p-lanzamiento{
+        font-size: 15px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .banner-p-lanzamiento{
+        font-size: 18px;
+    }
+    .banner-title-lanzamiento{
+        font-size: 26px;
+    }
+}
+
+
+/*================= FIN BACKGROUND =================*/
+
+/*================= INICIO GALERIA =================*/
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .3);
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #5c5c5c81;
+    width: 100%;
+    height: 0;
+    transition: .2s ease;
+    overflow: hidden;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.overlay span{
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+} 
+
+
+
+@media screen and (max-width: 1000px){
+    .contenedor-imagenes .imagen .overlay h2{
+        font-size: 23px;
+    }
+    .contenedor-imagenes .imagen .overlay span{
+        margin-top: 30px;
+    }
+    .contenedor-imagenes{
+        width: 95%;
+
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .contenedor-imagenes .imagen .overlay span{
+        margin-top: 40px;    
+        font-size: 23px;
+    }
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .contenedor-imagenes .imagen .overlay span{
+        margin-top: 40px;    
+        font-size: 23px;
+    }
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    h1{
+        font-size: 22px;
+    }
+    .contenedor-imagenes .imagen .overlay h2{
+        font-size: 25px;      
+    }
+    .contenedor-imagenes .imagen .overlay span{
+        margin-top: 40px;    
+        font-size: 23px;
+    }
+
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    
+    .contenedor-imagenes .imagen{
+        width: 100%;
+    }
+
+    .contenedor-imagenes .imagen img{
+        height: 80%;
+        width: 100%;
+    }
+}
+
+
+
+/*================= FIN GALERIA =================*/
+
+/*================= VALOR DOLAR =================*/
+
+#botonDolar{
+    margin-left:40px;
+}
+
+/*================= FIN VALOR DOLAR =================*/
+
+                                /*================= FIN LANZAMIENTOS =================*/
+
+
+
+
+                                /*================= INICIO QUIENES SOMOS =================*/
+
+
+
+/*================= INICIO BACKGROUND =================*/
+
+.banner{
+    background: url(../img/atletas.jpg)fixed center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #3a3a3a;
+    opacity: 0.3;
+}
+
+.banner-info{
+    padding: 4.8px;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+}
+
+.banner-title{
+    line-height: 1.5;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.banner-p{
+    line-height: 2;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+@media screen and (max-width: 1200px){
+    .banner-p{
+        font-size: 25px;
+    }
+    .btn-size{
+        font-size: 20px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .banner-p{
+        font-size: 23px;
+    }
+    .banner-title{
+       font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .banner-p{
+        font-size: 18px;
+    }
+    .banner-title{
+       font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .banner-p{
+        font-size: 15px;
+    }
+    .banner-title{
+       font-size: 25px;
+    }
+}
+
+/*================= FIN BACKGROUND =================*/
+
+
+/*================= INICIO SOBRE NOSOTROS =================*/
+
+.about-us{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us-item{
+    width: inherit;
+    height: inherit;    
+}
+
+
+.about-us-item img{
+    width: 100%;
+    height: 97.5%;
+    object-fit: cover;
+    
+}
+
+.about-us-item-text{ 
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0, .6);
+    color: #fff;
+    padding: 160px 80px;
+}
+
+.about-us-item-text h5{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-align:center;
+}
+
+.about-us-item-text p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+@media screen and (max-width:1200px){
+    .about-us-item-text{
+        max-width: 75%;
+        padding: 160px 80px;
+    }
+
+    .about-us-item-text h5{
+        font-size: 40px;
+    }
+
+    .about-us-item-text p{
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .about-us-item-text{
+        max-width: 100%;
+        padding: 32px;
+        top: initial;
+        bottom: 18px;
+        transform: initial;
+    }
+
+    .about-us-item-text h5{
+        font-size: 30px;
+    }
+
+    .about-us-item-text p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-us-item-text h5{
+        font-size: 20px;
+    }
+
+    .about-us-item-text p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .about-us-item-text h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .about-us-item-text h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text p{
+        font-size: 13px;
+    }
+}
+
+
+/*================= FIN SOBRE NOSOTROS =================*/
+
+
+/*================= INICIO VISIÓN =================*/
+
+.about-us-2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us-item-2{
+    width: inherit;
+    height: inherit;    
+}
+
+
+.about-us-item-2 img{
+    width: 100%;
+    height: 97.5%;
+    object-fit: cover;
+    
+}
+
+.about-us-item-text-2{ 
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: rgb(0, 0, 0, .6);
+    color: #fff;
+    padding: 160px 80px;
+}
+
+.about-us-item-text-2 h5{
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-align:center;
+}
+
+.about-us-item-text-2 p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    
+}
+
+@media screen and (max-width:1200px){
+    .about-us-item-text-2{
+        max-width: 75%;
+        padding: 160px 80px;
+    }
+
+    .about-us-item-text-2 h5{
+        font-size: 40px;
+    }
+
+    .about-us-item-text-2 p{
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about-us-item-text-2{
+        max-width: 100%;
+        padding: 32px;
+        top: initial;
+        bottom: 18px;
+        transform: initial;
+    }
+
+    .about-us-item-text-2 h5{
+        font-size: 30px;
+    }
+
+    .about-us-item-text-2 p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-us-item-text-2 h5{
+        font-size: 20px;
+    }
+
+    .about-us-item-text-2 p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .about-us-item-text-2 h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text-2 p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .about-us-item-text-2 h5{
+        font-size: 18px;
+    }
+
+    .about-us-item-text-2 p{
+        font-size: 13px;
+    }
+}
+
+/*================= FIN VISIÓN =================*/
+
+
+/*================= INICIO SECCIÓN VIDEO =================*/
+
+/* https://www.youtube.com/watch?v=V2VToIDHWIw */
+
+.video-contenedor{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.video-contenedor iframe{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#wrapper{
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media screen and (max-width:1200px){
+    .link-text{
+       font-size: 30px;     
+    }
+}
+
+@media screen and (max-width:800px){
+    .link-text{
+       font-size: 25px;     
+    }
+}
+
+@media screen and (max-width:500px){
+    .link-text{
+       font-size: 20px;     
+    }
+}
+
+@media screen and (max-width:400px){
+    .link-text{
+       font-size: 18px;     
+    }
+}
+
+@media screen and (max-width:300px){
+    .link-text{
+       font-size: 14px;     
+    }
+}
+
+
+/*================= FIN SECCIÓN VIDEO =================*/
+
+                    /*================= FIN QUIENES SOMOS =================*/
+
+
+
+                    /*================= INICIO FOOTER =================*/
+
+
+
+footer{
+    background: #fff;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #000;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 29px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 48px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #000;
+}
+
+.socials a i{
+    font-size: 18px;
+}
+
+@media screen and (max-width:1200px){
+    .footer-content p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .footer-content p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .footer-content p{
+        font-size: 15px;
+    }
+    .footer-content h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .footer-content p{
+        font-size: 13px;
+    }
+    .footer-content h3{
+        font-size: 18px;
+    }
+}
+                    /*================= FIN FOOTER =================*/
+
+
+                    /* EXPERIENCIA 2 */
+
+/* FORMULARIO REGISTRO */
+
+.imagen-fondo{
+    background: url(../img/registro.jpg)fixed center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-registro{
+    width: 400px;
+    background: rgba(194, 194, 194, 0.493);
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0 0 10px rgb(104, 104, 104); 
+    
+}
+
+.form-registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 17px;
+    padding-right: 15px;
+    background:#d66c0a;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.inputs{
+    width: 100%;
+    background: rgba(160, 160, 160, 0.493);
+    padding: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid #d66c0a;
+    font-size: 18px;
+    color: #fff;
+}
+
+.inputs:focus{
+    outline: none;
+}
+
+.inputs::placeholder{
+    color: #fff;
+}
+
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-registro a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.registro-label{
+    font-size: 15px;
+}
+
+.form-check-input{
+    block-size: 15px;
+}
+
+.form-botones{
+    width: 100%;
+    background: #d66c0a;;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.form-botones:hover{
+    background: #ff7d04;
+} 
+
+/* Registro exitoso */
+
+.imagen-registro-exitoso{
+    background: url(../img/registro.jpg)fixed center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-registro-exitoso{
+    width: 800px;
+    padding-top: 250px;
+    margin: auto;
+    margin-top: 50px;
+    color: #fff;
+    
+}
+
+.form-registro-exitoso h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-registro-exitoso p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-registro-exitoso a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* FIN REGISTRO USUARIO */
+
+/* INICIO REGISTRO ZAPATILLA */
+
+.imagen-fondo-2{
+    background: url(../img/aportes.jfif)fixed center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-aporte{
+    width: 800px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.form-aporte h4{
+    font-size: 25px;
+}
+
+.form-aporte p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-aporte hr{
+    margin-bottom: 15px;
+    
+}
+
+.form-aporte hr{
+    border: 0.1px solid;
+}
+
+.input-aporte{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -3px;
+}
+
+.input-aporte:focus{
+    outline: none;
+}
+
+.form-opciones{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-top: -3px;
+}
+
+.calendario{
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -3px;   
+}
+
+.form-file{
+    width: 740px;
+    border-radius: 4px;
+    border: 1px solid rgb(168, 168, 168);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.form-botones-aporte{
+    width: 80%;
+    background: #d66c0a;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin: 20px 0;
+    margin-left: 72px;
+    margin-top: 30px;
+    font-size: 16px;
+    border-radius: 4px;
+}   
+
+.form-botones-aporte:hover{
+    background: #ff7d04;
+} 
+
+
+.form-parrafo-aporte{
+    text-align: center;
+}   
+
+.form-parrafo-aporte a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* aporte enviado con exito */
+
+.imagen-aporte-exitoso{
+    background: url(../img/aportes.jfif)fixed center/cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-aporte-exitoso{
+    width: 800px;
+    padding-top: 260px;
+    margin: auto;
+    margin-top: 50px;
+    color: #fff;
+    
+}
+
+.form-aporte-exitoso h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-aporte-exitoso p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-aporte-exitoso a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1200px){
+    .form-registro{
+        width: 800px;     
+    }
+
+    .form-registro h4{
+        font-size: 40px;
+    }
+
+    .input-container {
+        margin-bottom: 30px;
+    }
+
+    .icon {
+        padding: 20px;
+        font-size: 23px;
+        min-width: 70px;
+    }
+
+    .inputs{
+        font-size: 30px;
+    }
+
+    .form-registro p{
+        font-size: 30px;
+    }
+
+    .form-check-label{
+        font-size: 30px;
+        padding-left: 10px;
+    }
+
+    .form-check-input{
+        margin-right: 100px;
+        width: 20px;
+        height: 20px;
+        block-size: 30px;
+    }
+
+    .form-botones{
+        padding: 15px;
+        font-size: 27px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 800px;     
+    }
+
+    .form-registro-exitoso h4{
+        font-size: 40px;
+    }
+
+    .form-registro-exitoso p{
+        font-size: 30px;
+    }
+
+    /* aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 800px;     
+    }
+
+    .form-aporte-exitoso h4{
+        font-size: 40px;
+    }
+
+    .form-aporte-exitoso p{
+        font-size: 30px;
+    }
+
+    /* Responsividad aportes */
+
+    .form-aporte h4{
+        font-size: 45px;
+    }
+
+    .form-aporte p{
+        font-size: 30px;
+    }
+
+    .form-aporte hr{
+        border: 1px solid rgba(187, 187, 187, 0.575);
+    }
+
+    .input-aporte{
+        font-size: 27px;
+    }
+
+    .labelaportes{
+        font-size: 25px;
+    }
+
+    .form-opciones{
+        font-size: 25px;
+    }
+
+    .calendario{
+        font-size: 25px;
+    }
+
+    .form-file{
+        font-size: 25px;
+    }
+
+    .form-botones-aporte{
+        padding: 10px;
+        font-size: 25px;
+    }   
+    
+    .form-parrafo-aporte a{
+        font-size: 30px;
+    }   
+}
+
+@media screen and (max-width:800px){
+    .form-registro{
+        width: 600px;     
+    }
+    .form-check-input{
+        block-size: 40px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 700px;  
+        padding-top: 150px;   
+    }
+
+    /* aporte exitoso */
+    .form-aporte-exitoso{
+        width: 700px;  
+        padding-top: 200px;   
+    }
+
+    /* Responsividad aportes */
+
+    .form-aporte{
+        width: 600px;
+    }
+
+    .form-aporte h4{
+        font-size: 40px;
+    }
+
+    .form-aporte p{
+        font-size: 25px;
+    }
+
+    .form-aporte hr{
+        border: 1px solid rgba(187, 187, 187, 0.575);
+    }
+
+    .input-aporte{
+        font-size: 20px;
+    }
+
+    .labelaportes{
+        font-size: 25px;
+    }
+
+    .form-opciones{
+        font-size: 20px;
+    }
+
+    .calendario{
+        font-size: 20px;
+    }
+
+    .form-file{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .form-botones-aporte{
+        padding: 10px;
+        font-size: 25px;
+    }   
+    
+    .form-parrafo-aporte a{
+        font-size: 30px;
+    } 
+}
+
+@media screen and (max-width:600px){
+    .form-registro{
+        width: 450px;     
+    }
+
+    .form-registro h4{
+        font-size: 20px;
+    }
+
+    .input-container {
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        padding: 15px;
+        font-size: 15px;
+        min-width: 15px;
+    }
+
+    .inputs{
+        font-size: 15px;
+    }
+
+    .form-registro p{
+        font-size: 15px;
+    }
+
+    .form-check-label{
+        font-size: 15px;
+        padding-left: 0px;
+        margin-top: 7px;
+    }
+
+    .form-check-input{
+        margin-right: 5px;
+        width: 13px;
+        height: 13px;
+        block-size: 25px;
+    }
+
+    .form-botones{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 450px;
+        padding-top: 200px;     
+    }
+
+    .form-registro-exitoso h4{
+        font-size: 25px;
+    }
+
+    .form-registro-exitoso p{
+        font-size: 20px;
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 450px;
+        padding-top: 200px;     
+    }
+
+    .form-aporte-exitoso h4{
+        font-size: 25px;
+    }
+
+    .form-aporte-exitoso p{
+        font-size: 20px;
+    }
+
+    /* Responsividad aportes */
+
+    .imagen-fondo-2{
+        width: 105%;
+    }
+    .form-aporte{
+        width: 500x;
+    }
+    .form-aporte h4{
+        font-size: 25px;
+    }
+
+    .form-aporte p{
+        font-size: 20px;
+    }
+
+    .form-aporte hr{
+        border: 1px solid rgba(187, 187, 187, 0.575);
+    }
+
+    .input-aporte{
+        font-size: 15px;
+    }
+
+    .labelaportes{
+        font-size: 20px;
+    }
+
+    .form-opciones{
+        font-size: 15px;
+    }
+
+    .calendario{
+        font-size: 15px;
+    }
+
+    .form-file{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .form-botones-aporte{
+        padding: 5px;
+        font-size: 15x;
+    }   
+    
+    .form-parrafo-aporte a{
+        font-size: 20px;
+    } 
+}
+
+@media screen and (max-width:500px){
+    .form-registro{
+        width: 350px;     
+    }
+
+    .form-check-input{
+        block-size: 27px;
+    }
+
+    .input-container {
+        margin-bottom: 6px;
+    }
+
+    .form-registro p{
+        font-size: 15px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 350px;     
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 350px;     
+    }
+
+    /* Responsividad aportes */
+
+    .imagen-fondo-2{
+        width: 100%;
+    }
+
+    .form-aporte{
+        width: 400px;
+    }
+
+    .form-aporte h4{
+        font-size: 20px;
+    }
+
+    .form-aporte p{
+        font-size: 15px;
+    }
+
+    .form-aporte hr{
+        border: 1px solid rgba(187, 187, 187, 0.575);
+    }
+
+    .input-aporte{
+        font-size: 10px;
+    }
+
+    .labelaportes{
+        font-size: 15px;
+    }
+
+    .form-opciones{
+        font-size: 10px;
+    }
+
+    .calendario{
+        font-size: 10px;
+    }
+
+    .form-file{
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .form-botones-aporte{
+        padding: 5px;
+        font-size: 15px;
+        margin-left: 35px;
+    }   
+    
+    .form-parrafo-aporte a{
+        font-size: 15px;
+    } 
+}
+
+@media screen and (max-width:400px){
+    .form-registro{
+        width: 300px;     
+    }
+    .input-container {
+        margin-bottom: 7px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 300px;     
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 300px;     
+    }
+
+    /* Responsividad aportes */
+
+    .imagen-fondo-2{
+        width: 100%;
+    }
+
+    .form-aporte{
+        width: 300px;
+    }
+
+    .form-aporte h4{
+        font-size: 20px;
+    }
+
+    .form-aporte p{
+        font-size: 13px;
+    }
+
+    .form-aporte hr{
+        border: 1px solid rgba(187, 187, 187, 0.575);
+    }
+
+    .input-aporte{
+        font-size: 10px;
+    }
+
+    .labelaportes{
+        font-size: 15px;
+    }
+
+    .form-opciones{
+        font-size: 10px;
+    }
+
+    .calendario{
+        font-size: 10px;
+    }
+
+    .form-file{
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .form-botones-aporte{
+        padding: 5px;
+        font-size: 15px;
+        margin-left: 25px;
+    }   
+    
+    .form-parrafo-aporte a{
+        font-size: 13px;
+    } 
+}
+
+@media screen and (max-width:300px){
+    .form-registro{
+        width: 250px;  
+        margin-top: 50px;   
+    }
+
+    .icon {
+        padding: 15px;
+        font-size: 10px;
+        min-width: 15px;
+    }
+
+    .input-container {
+        margin-bottom: 7px;
+    }
+
+    .inputs{
+        font-size: 13px;
+    }
+
+    .form-check-input{
+        block-size: 28px;
+    }
+
+    .form-registro p{
+        font-size: 12px;
+    }
+
+    /* Registro exitoso */
+
+    .form-registro-exitoso{
+        width: 250px;  
+        margin-top: 50px;   
+    }
+
+    .form-registro-exitoso h4{
+        font-size: 20px;
+    }
+
+    .form-registro-exitoso p{
+        font-size: 15px;
+    }
+
+    /* Aporte exitoso */
+
+    .form-aporte-exitoso{
+        width: 250px;  
+        margin-top: 50px;   
+    }
+
+    .form-aporte-exitoso h4{
+        font-size: 20px;
+    }
+
+    .form-aporte-exitoso p{
+        font-size: 15px;
+    }
+
+    /* Respondividad aportes */
+
+    .imagen-fondo-2{
+        width: 105%;
+    }
+}
+
