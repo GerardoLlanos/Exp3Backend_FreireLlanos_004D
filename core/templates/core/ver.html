@@ -30,7 +30,8 @@
                         <td>{{zap.marca}}</td>
                         <td>{{zap.valor}}</td>
                         <td>{{zap.fecha}}</td>
-                        <td><a href="{% url 'form_mod_zapatillas' zap.nombre%}">Modificar   </a></td>
+                        <td><a href="{% url 'form_mod_zapatillas' zap.nombre%}" class="btn btn-primary">Modificar   </a></td>
+                        <td><a href="{% url 'form_del_zapatillas' zap.nombre%}" class="btn btn-danger">Eliminar   </a></td>
                     </tr>
                 {%endfor%}
 

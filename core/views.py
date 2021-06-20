@@ -38,3 +38,8 @@ def form_mod_zapatillas(request, id):
             formulario.save()
             return redirect('ver')
     return render(request, 'core/form_mod_zapatillas.html', datos)
+
+def form_del_zapatillas(request, id):
+    zapatilla = DatosZapatilla.objects.get(nombre=id)
+    zapatilla.delete()
+    return redirect('ver')
