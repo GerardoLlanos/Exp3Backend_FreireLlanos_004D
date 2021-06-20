@@ -14,6 +14,7 @@ class DatosZapatilla(models.Model):
     marca = models.ForeignKey(Marca, on_delete=models.CASCADE)
     valor = models.IntegerField(verbose_name='Valor')
     fecha = models.CharField(max_length= 10, verbose_name='Fecha')
+    imagen = models.ImageField(upload_to='zapatillas/', null=True, blank=True)
 
 
     def __str__(self):

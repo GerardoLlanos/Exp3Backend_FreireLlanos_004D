@@ -7,45 +7,34 @@ from .models import Marca, DatosZapatilla
 
 
 class AportesForm(forms.ModelForm):
+    nombre = forms.CharField(label='Nombre de zapatilla',max_length=200, widget=forms.TextInput(
+        attrs={
+            'class':'form-control'
+        }
+    ))   
+    marca = forms.ModelChoiceField(queryset=Marca.objects.all(), label='Marca',widget=forms.Select(
+        attrs={
+            'class':'form-control'
+        }
+    ))
+    valor = forms.IntegerField(label='Valor de zapatilla', widget=forms.NumberInput(
+        attrs={
+            'class':'form-control'
+        }
+    ))
+    fecha = forms.CharField(label='Fecha de lanzamiento',max_length=10, widget=forms.TextInput(
+        attrs={
+            'class':'form-control'
+        }
+    ))   
+    imagen = forms.ImageField(label='Imagen', widget=forms.FileInput(
+        attrs={
+            'class':'form-control' 
+        }
+    ))
 
     class Meta: 
         model = DatosZapatilla
-        fields = ['nombre', 'marca', 'valor', 'fecha']
+        fields = ['nombre', 'marca', 'valor', 'fecha', 'imagen']
     
-        labels={
-            'nombre': 'Nombre de Zapatilla: ',
-            'marca': 'Marca de Zapatilla: ',
-            'valor': 'Valor de Zapatilla: ', 
-            'fecha': 'Fecha de Lanzamiento: ',
-            'imagen': 'Imagen de Zapatilla: '
-
-        }
-        widgets={
-            'nombre': forms.TextInput(
-                attrs={
-                    'class': 'form-control',
-                    'id': 'nombre', 
-                    'placeholder': 'Digite nombre'
-                }
-            ),
-            'marca': forms.Select(
-                attrs={
-                    'class': 'form-control',
-                    'id': 'marca', 
-                }
-            ), 
-            'valor': forms.NumberInput(
-                attrs={
-                    'class': 'form-control',
-                    'id': 'valor', 
-                    'placeholder': 'Digite valor'
-                }
-            ),
-            'fecha': forms.TextInput(
-                attrs={
-                    'class': 'form-control',
-                    'id': 'fecha',
-                    'placeholder': '01/01/2021'
-                }
-            ),
-        }
+     

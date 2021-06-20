@@ -20,7 +20,7 @@ def Ver(request):
 
 def form_aportes(request):
     if request.method == 'POST': 
-        aportes_form = AportesForm(request.POST)
+        aportes_form = AportesForm(request.POST, files=request.FILES)
         if aportes_form.is_valid():
             aportes_form.save()        #similar al insert de un modelo relacional 
             return redirect('home')
@@ -37,7 +37,7 @@ def form_mod_zapatillas(request, id):
     }
     
     if request.method == 'POST': 
-        formulario = AportesForm(data=request.POST, instance = zapatilla)
+        formulario = AportesForm(data=request.POST, instance = zapatilla, files=request.FILES)
         if formulario.is_valid: 
             formulario.save()
             return redirect('ver')
